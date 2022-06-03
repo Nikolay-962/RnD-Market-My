@@ -1,0 +1,34 @@
+
+
+@import "parts/_variables";
+@import "parts/_mixins";
+@import "parts/_general";
+
+$j-fs: flex-start;
+$j-end: flex-end;
+$j-center: center;
+$j-sb: space-between;
+$j-sa: space-around;
+
+$a-fs: flex-start;
+$a-end: flex-end;
+$a-center: center;
+$a-bl: baselie;
+$a-st: stretch;
+
+@mixin flex($flex-j: $j-fs, $flex-a: $a-st) {
+  display: flex;
+  justify-content: $flex-j;
+  align-items: $flex-a;
+}
+
+@mixin img-center {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
